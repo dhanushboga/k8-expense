@@ -1,4 +1,4 @@
-kind: NameSpace
+kind: Namespace
 version: v1
 metadata:
   name: expense
