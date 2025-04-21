@@ -28,7 +28,7 @@ spec:
       - name: nginx
         image: dhanushboga/frontend:1.0.0
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 
 
 ---
