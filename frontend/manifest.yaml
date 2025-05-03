@@ -16,7 +16,7 @@ spec:
       app: frontend
       tier: frontend
       project: expense
-      
+
   template:
     metadata:
       labels:
@@ -27,6 +27,15 @@ spec:
       containers:
       - name: nginx
         image: dhanushboga/frontend:1.2.3
+        resources:
+     # soft limit
+          requests:
+            memory: 128Mi
+            cpu: 100m
+      # hard limit
+          limits:
+            memory: 128Mi
+            cpu: 100m
         ports:
         - containerPort: 8080
 

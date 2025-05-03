@@ -27,6 +27,16 @@ spec:
       containers:
       - name: nginx
         image: dhanushboga/backend:1.0.0
+        resources:
+     # soft limit
+          requests:
+            memory: 128Mi
+            cpu: 100m
+
+      # hard limit
+          limits:
+            memory: 128Mi
+            cpu: 100m
         ports:
         - containerPort: 80
 
